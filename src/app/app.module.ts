@@ -3,13 +3,19 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 
+import { NgTippyModule } from 'ng-tippy';
+
+
+
 @NgModule({
   declarations: [
     AppComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    NgTippyModule
   ],
+  exports: [],
   providers: [],
   bootstrap: [AppComponent]
 })

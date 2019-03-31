@@ -1,1 +1,19 @@
 /* You can add global styles to this file, and also import other style files */
+
+
+.light-theme {
+  background: red;
+}
+
+.tippy-tooltip.light-theme {
+  background-color: tomato;
+  color: yellow;
+}
+
+.tippy-tooltip.light-theme[data-animatefill] {
+  background-color: transparent;
+}
+
+.tippy-tooltip.light-theme .tippy-backdrop {
+  background-color: tomato;
+}
