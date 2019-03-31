@@ -1,11 +1,10 @@
 import { NgModule } from '@angular/core';
-import { NgTippyComponent } from './ng-tippy.component';
 import { TippysDirective } from './ng-tippy.directive';
 
 @NgModule({
-  declarations: [NgTippyComponent, TippysDirective],
+  declarations: [ TippysDirective],
   imports: [
   ],
-  exports: [NgTippyComponent, TippysDirective]
+  exports: [ TippysDirective]
 })
 export class NgTippyModule { }
