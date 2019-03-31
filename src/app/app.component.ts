@@ -1,5 +1,5 @@
 import { Component, ViewChild, OnInit, ElementRef } from '@angular/core';
-import { NgTippyService } from 'ng-tippy';
+import { NgTippyService, Instance } from 'ng-tippy';
 import { Options } from 'ng-tippy/lib/ng-tippy.model';
 @Component({
   selector: 'app-root',
