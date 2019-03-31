@@ -15,14 +15,14 @@ export class AppComponent implements OnInit {
   }
   title = 'demo';
   config: Options = {
-    content: "This is a Testa!",
+    content: "This is some content!",
     theme: 'light',
     placement: 'right-end',
     multiple: true
   };
 
   config1: Options = {
-    content: "This is a Test 1!",
+    content: "This is more content",
     theme: 'light',
     placement: 'left-start',
     multiple: true
