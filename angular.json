@@ -133,6 +133,76 @@
           }
         }
       }
+    },
+    "tippy": {
+      "root": "projects/tippy",
+      "sourceRoot": "projects/tippy/src",
+      "projectType": "library",
+      "prefix": "ng",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/tippy/tsconfig.lib.json",
+            "project": "projects/tippy/ng-package.json"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/tippy/src/test.ts",
+            "tsConfig": "projects/tippy/tsconfig.spec.json",
+            "karmaConfig": "projects/tippy/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/tippy/tsconfig.lib.json",
+              "projects/tippy/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    },
+    "ng-tippy": {
+      "root": "projects/ng-tippy",
+      "sourceRoot": "projects/ng-tippy/src",
+      "projectType": "library",
+      "prefix": "ng",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/ng-tippy/tsconfig.lib.json",
+            "project": "projects/ng-tippy/ng-package.json"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/ng-tippy/src/test.ts",
+            "tsConfig": "projects/ng-tippy/tsconfig.spec.json",
+            "karmaConfig": "projects/ng-tippy/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/ng-tippy/tsconfig.lib.json",
+              "projects/ng-tippy/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }
   },
   "defaultProject": "demo"
