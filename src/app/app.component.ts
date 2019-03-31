@@ -1,18 +1,37 @@
 import { Component, ViewChild, OnInit, ElementRef } from '@angular/core';
+import { NgTippyService } from 'ng-tippy';
+import { Options } from 'projects/ng-tippy/node_modules/tippy.js';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnInit {
+  @ViewChild('test') test: ElementRef;
+  // @ViewChild('test2') test: ElementRef;
+
+  constructor(private ngTippy: NgTippyService) {
+    
+  }
   title = 'demo';
-  config = {
-    content: "This is a Test!",
+  config: Options = {
+    content: "This is a Testa!",
     theme: 'light',
-    duration: [0, 1000],
-    placement: 'bottom'
+    placement: 'right-end',
+    multiple: true
+  };
+
+  config1: Options = {
+    content: "This is a Test 1!",
+    theme: 'light',
+    placement: 'left-start',
+    multiple: true
   };
 
   ngOnInit() {
+    const a = this.ngTippy.init(this.test, this.config);
+    a.show(5000);
+    const b = this.ngTippy.init(this.test, this.config1);
+    b.show(5000);
   }
 }
