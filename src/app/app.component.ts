@@ -1,6 +1,6 @@
 import { Component, ViewChild, OnInit, ElementRef } from '@angular/core';
 import { NgTippyService } from 'ng-tippy';
-import { Options } from 'projects/ng-tippy/node_modules/tippy.js';
+import { Options } from 'ng-tippy/lib/ng-tippy.model';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -10,19 +10,17 @@ export class AppComponent implements OnInit {
   @ViewChild('test') test: ElementRef;
   // @ViewChild('test2') test: ElementRef;
 
-  constructor(private ngTippy: NgTippyService) {
-    
-  }
+  constructor(private ngTippy: NgTippyService) {}
   title = 'demo';
   config: Options = {
-    content: "This is some content!",
+    content: 'This is some content!',
     theme: 'light',
     placement: 'right-end',
     multiple: true
   };
 
   config1: Options = {
-    content: "This is more content",
+    content: 'This is more content',
     theme: 'light',
     placement: 'left-start',
     multiple: true

@@ -1,11 +1,27 @@
 {
-  "name": "ng-tippy",
-  "version": "0.0.1",
+  "name": "angular-tippy",
+  "version": "0.0.2",
   "peerDependencies": {
     "@angular/common": "^7.0.0",
     "@angular/core": "^7.0.0"
   },
   "dependencies": {
     "tippy.js": "^4.2.1"
-  }
+  },
+  "keywords": [
+    "Angular",
+    "PopperJs",
+    "tippy.js",
+    "tool tips"
+],
+"author": {
+    "name": "Jonathan Rinciari",
+    "email": "rinciarijoc@gmail.com"
+},
+"bugs": {
+    "url": "https://github.com/jonathanRinciari/ng-tippy/issues"
+},
+"license": "Apache-2.0",
+"homepage": "https://github.com/jonathanRinciari/ng-tippy",
+"readmeFilename": "README.md"
 }
