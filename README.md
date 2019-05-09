@@ -84,8 +84,9 @@ import { NgTippyService, Instance} from 'ng-tippy';
 Check out the full documentation for the configuration at the official documents [Tippy.js](https://atomiks.github.io/tippyjs/all-options/)
     
 ## License
+Apache License Version 2.0, January 2004
 
 ##TODO
 Update positioning
 
-Apache License Version 2.0, January 2004
+
